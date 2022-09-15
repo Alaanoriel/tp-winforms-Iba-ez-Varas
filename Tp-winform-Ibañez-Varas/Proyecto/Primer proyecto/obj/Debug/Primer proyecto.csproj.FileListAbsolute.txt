@@ -1,0 +1,23 @@
+C:\Users\aibanez\source\repos\Primer proyecto\Primer proyecto\bin\Debug\Primer proyecto.exe.config
+C:\Users\aibanez\source\repos\Primer proyecto\Primer proyecto\bin\Debug\Primer proyecto.exe
+C:\Users\aibanez\source\repos\Primer proyecto\Primer proyecto\bin\Debug\Primer proyecto.pdb
+C:\Users\aibanez\source\repos\Primer proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.AssemblyReference.cache
+C:\Users\aibanez\source\repos\Primer proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Form1.resources
+C:\Users\aibanez\source\repos\Primer proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Properties.Resources.resources
+C:\Users\aibanez\source\repos\Primer proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Ventana_agregar.resources
+C:\Users\aibanez\source\repos\Primer proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.GenerateResource.cache
+C:\Users\aibanez\source\repos\Primer proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.CoreCompileInputs.cache
+C:\Users\aibanez\source\repos\Primer proyecto\Primer proyecto\obj\Debug\Primer proyecto.exe
+C:\Users\aibanez\source\repos\Primer proyecto\Primer proyecto\obj\Debug\Primer proyecto.pdb
+C:\Users\parac\Source\Repos\tp-winform_Varas_Ibanez\Primer proyecto\Primer proyecto\bin\Debug\Primer proyecto.exe.config
+C:\Users\parac\Source\Repos\tp-winform_Varas_Ibanez\Primer proyecto\Primer proyecto\bin\Debug\Primer proyecto.exe
+C:\Users\parac\Source\Repos\tp-winform_Varas_Ibanez\Primer proyecto\Primer proyecto\bin\Debug\Primer proyecto.pdb
+C:\Users\parac\Source\Repos\tp-winform_Varas_Ibanez\Primer proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.AssemblyReference.cache
+C:\Users\parac\Source\Repos\tp-winform_Varas_Ibanez\Primer proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Form1.resources
+C:\Users\parac\Source\Repos\tp-winform_Varas_Ibanez\Primer proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Properties.Resources.resources
+C:\Users\parac\Source\Repos\tp-winform_Varas_Ibanez\Primer proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Ventana_agregar.resources
+C:\Users\parac\Source\Repos\tp-winform_Varas_Ibanez\Primer proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Ventana_Buscar.resources
+C:\Users\parac\Source\Repos\tp-winform_Varas_Ibanez\Primer proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.GenerateResource.cache
+C:\Users\parac\Source\Repos\tp-winform_Varas_Ibanez\Primer proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.CoreCompileInputs.cache
+C:\Users\parac\Source\Repos\tp-winform_Varas_Ibanez\Primer proyecto\Primer proyecto\obj\Debug\Primer proyecto.exe
+C:\Users\parac\Source\Repos\tp-winform_Varas_Ibanez\Primer proyecto\Primer proyecto\obj\Debug\Primer proyecto.pdb
