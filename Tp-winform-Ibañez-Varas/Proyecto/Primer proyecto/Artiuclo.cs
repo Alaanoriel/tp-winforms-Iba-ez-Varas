@@ -13,16 +13,23 @@ namespace Primer_proyecto
         private string descripcion;
         private float precio;
         private string imagen;
+        private string marca;
+        private string categoria;
 
-        public string Marca { get; set; }
-        public string Categoria { get; set; }
 
         public string Nombre
         {
             set
             {
-                if (value != null)
+                try
+                {
                     nombre = value;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
             }
             get { return nombre; }
         }
@@ -30,8 +37,15 @@ namespace Primer_proyecto
         {
             set
             {
-                if (value != null)
+                try
+                {
                     codigo = value;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
             }
             get { return codigo; }
         }
@@ -39,8 +53,15 @@ namespace Primer_proyecto
         {
             set
             {
-                if (value != null)
+                try
+                {
                     descripcion = value;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
             }
             get { return descripcion; }
         }
@@ -48,20 +69,70 @@ namespace Primer_proyecto
         {
             set
             {
-                if (value != 0)
+                try
+                {
                     precio = value;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
             }
             get { return precio; }
         }
-
         public string Imagen
         {
             set
             {
-                if (value != null)
+                try
+                {
                     imagen = value;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
             }
             get { return imagen; }
+        }
+        public string Marca
+        {
+            get
+            {
+                return marca;
+            }
+
+            set
+            {
+                try
+                {
+                    marca = value;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+            }
+        }
+        public string Categoria
+        {
+            get { return categoria; }
+
+            set
+            {
+                try
+                {
+                    categoria = value;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+            }
         }
     }
 }
