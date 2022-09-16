@@ -20,13 +20,33 @@ namespace Primer_proyecto
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Ventana_agregar Agregar = new Ventana_agregar();
-            Agregar.ShowDialog();
+            try
+            {
+                Agregar.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                Agregar.Close();
+                MessageBox.Show("Error en Ventana Agregar");
+                throw ex;
+            }
         }
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Ventana_Buscar Buscar = new Ventana_Buscar();
-            Buscar.ShowDialog();
+
+            try
+            {
+                Buscar.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en Ventana Busqueda");
+                Buscar.Close();
+                throw ex;
+            }
+            
         }
     }
 }
