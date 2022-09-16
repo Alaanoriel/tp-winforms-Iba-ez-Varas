@@ -14,7 +14,7 @@ namespace Primer_proyecto
         private float precio;
         private string imagen;
         private string marca;
-        private string categoria;
+        //private string categoria;
 
 
         public string Nombre
@@ -117,22 +117,22 @@ namespace Primer_proyecto
                 }
             }
         }
-        public string Categoria
-        {
-            get { return categoria; }
+        //public string Categoria
+        //{
+        //    get { return categoria; }
 
-            set
-            {
-                try
-                {
-                    categoria = value;
-                }
-                catch (Exception ex)
-                {
+        //    set
+        //    {
+        //        try
+        //        {
+        //            categoria = value;
+        //        }
+        //        catch (Exception ex)
+        //        {
 
-                    throw ex;
-                }
-            }
-        }
+        //            throw ex;
+        //        }
+        //    }
+        //}
     }
 }
