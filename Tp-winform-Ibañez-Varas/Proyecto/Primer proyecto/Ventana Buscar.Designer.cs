@@ -34,8 +34,9 @@ namespace Primer_proyecto
             this.Button_Buscar = new System.Windows.Forms.Button();
             this.Button_Modificar = new System.Windows.Forms.Button();
             this.Button_Limpiar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -82,21 +83,30 @@ namespace Primer_proyecto
             this.Button_Limpiar.Text = "Limpiar texto";
             this.Button_Limpiar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgvDatos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 117);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(610, 150);
-            this.dataGridView1.TabIndex = 7;
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.Location = new System.Drawing.Point(13, 117);
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.Size = new System.Drawing.Size(610, 150);
+            this.dgvDatos.TabIndex = 7;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(527, 32);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 8;
             // 
             // Ventana_Buscar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(635, 313);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(726, 311);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.Button_Limpiar);
             this.Controls.Add(this.Button_Modificar);
             this.Controls.Add(this.Button_Buscar);
@@ -104,7 +114,8 @@ namespace Primer_proyecto
             this.Controls.Add(this.textBox1);
             this.Name = "Ventana_Buscar";
             this.Text = "Ventana_Buscar";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Ventana_Buscar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,6 +128,7 @@ namespace Primer_proyecto
         private System.Windows.Forms.Button Button_Buscar;
         private System.Windows.Forms.Button Button_Modificar;
         private System.Windows.Forms.Button Button_Limpiar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDatos;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
