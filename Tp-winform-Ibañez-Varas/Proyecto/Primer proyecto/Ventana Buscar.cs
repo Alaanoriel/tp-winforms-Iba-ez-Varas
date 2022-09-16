@@ -16,5 +16,20 @@ namespace Primer_proyecto
         {
             InitializeComponent();
         }
+
+        private void Ventana_Buscar_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                ArticuloDatos datos = new ArticuloDatos();
+                dgvDatos.DataSource = datos.Listar();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error en la carga de datos");
+                throw;
+            }
+            
+        }
     }
 }

@@ -11,9 +11,9 @@ namespace Primer_proyecto
         private string nombre;
         private string codigo;
         private string descripcion;
-        private float precio;
+        private decimal precio;
         private string imagen;
-        private string marca;
+        
         //private string categoria;
 
 
@@ -65,7 +65,7 @@ namespace Primer_proyecto
             }
             get { return descripcion; }
         }
-        public float Precio
+        public decimal Precio
         {
             set
             {
@@ -96,26 +96,6 @@ namespace Primer_proyecto
                 }
             }
             get { return imagen; }
-        }
-        public string Marca
-        {
-            get
-            {
-                return marca;
-            }
-
-            set
-            {
-                try
-                {
-                    marca = value;
-                }
-                catch (Exception ex)
-                {
-
-                    throw ex;
-                }
-            }
         }
         //public string Categoria
         //{

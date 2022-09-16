@@ -35,9 +35,13 @@ namespace Primer_proyecto
                     aux.Nombre = (string)lector["Nombre"];
                     aux.Descripcion = (string)lector["Descripcion"];
                     aux.Imagen = (string)lector["ImagenUrl"];
-                    aux.Precio = (float)lector["Precio"];
+                    aux.Precio = Decimal.Round((decimal)lector["Precio"], 2); 
+                    
+
+                    lista.Add(aux);
                 }
 
+                conexion.Close();
                 return lista;
             }
             catch (Exception ex)
