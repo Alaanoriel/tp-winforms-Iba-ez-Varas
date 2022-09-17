@@ -29,22 +29,24 @@ namespace Primer_proyecto
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbDatosABuscar = new System.Windows.Forms.TextBox();
             this.Label_Dato = new System.Windows.Forms.Label();
-            this.Button_Buscar = new System.Windows.Forms.Button();
-            this.Button_Modificar = new System.Windows.Forms.Button();
-            this.Button_Limpiar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbxTipoBusqueda = new System.Windows.Forms.ComboBox();
+            this.pbxImagen = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtbDatosABuscar
             // 
-            this.textBox1.Location = new System.Drawing.Point(166, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(333, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtbDatosABuscar.Location = new System.Drawing.Point(166, 33);
+            this.txtbDatosABuscar.Name = "txtbDatosABuscar";
+            this.txtbDatosABuscar.Size = new System.Drawing.Size(333, 20);
+            this.txtbDatosABuscar.TabIndex = 0;
             // 
             // Label_Dato
             // 
@@ -56,66 +58,78 @@ namespace Primer_proyecto
             this.Label_Dato.TabIndex = 3;
             this.Label_Dato.Text = "Dato del producto";
             // 
-            // Button_Buscar
+            // btnBuscar
             // 
-            this.Button_Buscar.Location = new System.Drawing.Point(166, 60);
-            this.Button_Buscar.Name = "Button_Buscar";
-            this.Button_Buscar.Size = new System.Drawing.Size(107, 23);
-            this.Button_Buscar.TabIndex = 4;
-            this.Button_Buscar.Text = "Buscar";
-            this.Button_Buscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Location = new System.Drawing.Point(166, 60);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(107, 23);
+            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
-            // Button_Modificar
+            // btnModificar
             // 
-            this.Button_Modificar.Location = new System.Drawing.Point(279, 60);
-            this.Button_Modificar.Name = "Button_Modificar";
-            this.Button_Modificar.Size = new System.Drawing.Size(107, 23);
-            this.Button_Modificar.TabIndex = 5;
-            this.Button_Modificar.Text = "Modificar";
-            this.Button_Modificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Location = new System.Drawing.Point(279, 60);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(107, 23);
+            this.btnModificar.TabIndex = 5;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
             // 
-            // Button_Limpiar
+            // btnLimpiar
             // 
-            this.Button_Limpiar.Location = new System.Drawing.Point(392, 60);
-            this.Button_Limpiar.Name = "Button_Limpiar";
-            this.Button_Limpiar.Size = new System.Drawing.Size(107, 23);
-            this.Button_Limpiar.TabIndex = 6;
-            this.Button_Limpiar.Text = "Limpiar texto";
-            this.Button_Limpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Location = new System.Drawing.Point(392, 60);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(107, 23);
+            this.btnLimpiar.TabIndex = 6;
+            this.btnLimpiar.Text = "Limpiar texto";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
             // 
             // dgvDatos
             // 
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDatos.Location = new System.Drawing.Point(13, 117);
             this.dgvDatos.Name = "dgvDatos";
-            this.dgvDatos.Size = new System.Drawing.Size(610, 150);
+            this.dgvDatos.Size = new System.Drawing.Size(610, 220);
             this.dgvDatos.TabIndex = 7;
+            this.dgvDatos.SelectionChanged += new System.EventHandler(this.dgvDatos_SelectionChanged);
             // 
-            // comboBox1
+            // cbxTipoBusqueda
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(527, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 8;
+            this.cbxTipoBusqueda.FormattingEnabled = true;
+            this.cbxTipoBusqueda.Location = new System.Drawing.Point(527, 32);
+            this.cbxTipoBusqueda.Name = "cbxTipoBusqueda";
+            this.cbxTipoBusqueda.Size = new System.Drawing.Size(209, 21);
+            this.cbxTipoBusqueda.TabIndex = 8;
+            // 
+            // pbxImagen
+            // 
+            this.pbxImagen.Location = new System.Drawing.Point(630, 117);
+            this.pbxImagen.Name = "pbxImagen";
+            this.pbxImagen.Size = new System.Drawing.Size(201, 220);
+            this.pbxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxImagen.TabIndex = 9;
+            this.pbxImagen.TabStop = false;
             // 
             // Ventana_Buscar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(726, 311);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(843, 362);
+            this.Controls.Add(this.pbxImagen);
+            this.Controls.Add(this.cbxTipoBusqueda);
             this.Controls.Add(this.dgvDatos);
-            this.Controls.Add(this.Button_Limpiar);
-            this.Controls.Add(this.Button_Modificar);
-            this.Controls.Add(this.Button_Buscar);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.Label_Dato);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtbDatosABuscar);
             this.Name = "Ventana_Buscar";
             this.Text = "Ventana_Buscar";
             this.Load += new System.EventHandler(this.Ventana_Buscar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,12 +137,13 @@ namespace Primer_proyecto
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbDatosABuscar;
         private System.Windows.Forms.Label Label_Dato;
-        private System.Windows.Forms.Button Button_Buscar;
-        private System.Windows.Forms.Button Button_Modificar;
-        private System.Windows.Forms.Button Button_Limpiar;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.DataGridView dgvDatos;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxTipoBusqueda;
+        private System.Windows.Forms.PictureBox pbxImagen;
     }
 }

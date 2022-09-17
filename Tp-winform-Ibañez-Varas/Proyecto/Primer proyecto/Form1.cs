@@ -28,7 +28,6 @@ namespace Primer_proyecto
             {
                 Agregar.Close();
                 MessageBox.Show("Error en Ventana Agregar");
-                throw ex;
             }
         }
 
@@ -44,7 +43,6 @@ namespace Primer_proyecto
             {
                 MessageBox.Show("Error en Ventana Busqueda");
                 Buscar.Close();
-                throw ex;
             }
             
         }

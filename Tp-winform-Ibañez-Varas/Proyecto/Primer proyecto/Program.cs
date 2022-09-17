@@ -16,7 +16,20 @@ namespace Primer_proyecto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            try
+            {
+                Application.Run(new Form1());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR AL CORRER EL PROGRAMA");
+                throw ex;
+            }
+            finally
+            {
+                Application.Exit();
+            }
+
         }
     }
 }

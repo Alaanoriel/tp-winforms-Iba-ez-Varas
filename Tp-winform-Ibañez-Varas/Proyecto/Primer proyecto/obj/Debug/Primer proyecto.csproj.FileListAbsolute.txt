@@ -33,3 +33,15 @@ C:\Users\avaras.FRGP\Documents\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañe
 C:\Users\avaras.FRGP\Documents\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.CoreCompileInputs.cache
 C:\Users\avaras.FRGP\Documents\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.exe
 C:\Users\avaras.FRGP\Documents\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.pdb
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Primer proyecto.exe.config
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Primer proyecto.exe
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Primer proyecto.pdb
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.AssemblyReference.cache
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Form1.resources
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Properties.Resources.resources
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Ventana_agregar.resources
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Ventana_Buscar.resources
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.GenerateResource.cache
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.CoreCompileInputs.cache
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.exe
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.pdb

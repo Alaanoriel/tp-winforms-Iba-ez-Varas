@@ -12,9 +12,8 @@ namespace Primer_proyecto
         private string codigo;
         private string descripcion;
         private decimal precio;
-        private string imagen;
+        private string urlimagen;
         
-        //private string categoria;
 
 
         public string Nombre
@@ -81,13 +80,13 @@ namespace Primer_proyecto
             }
             get { return precio; }
         }
-        public string Imagen
+        public string UrlImagen
         {
             set
             {
                 try
                 {
-                    imagen = value;
+                    urlimagen = value;
                 }
                 catch (Exception ex)
                 {
@@ -95,24 +94,7 @@ namespace Primer_proyecto
                     throw ex;
                 }
             }
-            get { return imagen; }
+            get { return urlimagen; }
         }
-        //public string Categoria
-        //{
-        //    get { return categoria; }
-
-        //    set
-        //    {
-        //        try
-        //        {
-        //            categoria = value;
-        //        }
-        //        catch (Exception ex)
-        //        {
-
-        //            throw ex;
-        //        }
-        //    }
-        //}
     }
 }

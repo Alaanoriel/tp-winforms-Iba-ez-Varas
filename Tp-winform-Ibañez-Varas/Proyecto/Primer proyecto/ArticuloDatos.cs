@@ -34,7 +34,7 @@ namespace Primer_proyecto
                     aux.Codigo = (string)lector["Codigo"];
                     aux.Nombre = (string)lector["Nombre"];
                     aux.Descripcion = (string)lector["Descripcion"];
-                    aux.Imagen = (string)lector["ImagenUrl"];
+                    aux.UrlImagen = (string)lector["ImagenUrl"];
                     aux.Precio = Decimal.Round((decimal)lector["Precio"], 2); 
                     
 
