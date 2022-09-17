@@ -1,0 +1,9 @@
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Conexion\bin\Debug\Conexion.dll
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Conexion\bin\Debug\Conexion.pdb
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Conexion\bin\Debug\Clases.dll
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Conexion\bin\Debug\Clases.pdb
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Conexion\obj\Debug\Conexion.csproj.AssemblyReference.cache
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Conexion\obj\Debug\Conexion.csproj.CoreCompileInputs.cache
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Conexion\obj\Debug\Conexion.csproj.CopyComplete
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Conexion\obj\Debug\Conexion.dll
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Conexion\obj\Debug\Conexion.pdb

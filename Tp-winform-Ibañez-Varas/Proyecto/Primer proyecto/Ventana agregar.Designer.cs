@@ -182,6 +182,7 @@ namespace Primer_proyecto
             this.Button_Agregar.TabIndex = 14;
             this.Button_Agregar.Text = "Agregar producto";
             this.Button_Agregar.UseVisualStyleBackColor = true;
+            this.Button_Agregar.Click += new System.EventHandler(this.Button_Agregar_Click);
             // 
             // Button_Modificar
             // 

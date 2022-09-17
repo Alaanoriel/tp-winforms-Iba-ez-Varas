@@ -57,3 +57,8 @@ C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proy
 C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.CoreCompileInputs.cache
 C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.exe
 C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.pdb
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Clases.dll
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Conexion.dll
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Clases.pdb
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Conexion.pdb
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.CopyComplete

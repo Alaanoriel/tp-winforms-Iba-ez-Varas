@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using Clases;
 
-namespace Primer_proyecto
+namespace Conexion
 {
-    class ArticuloDatos
+    public class ArticuloDatos
     {
         public List<Artiuclo> Listar()
         {
@@ -58,4 +59,7 @@ namespace Primer_proyecto
             
         }
     }
+
 }
+
+

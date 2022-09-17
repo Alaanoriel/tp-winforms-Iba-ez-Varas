@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Primer_proyecto
+namespace Clases
 {
-    class Marca
+   public class Marca
     {
         public int Id { get; set; }
         public string Descripcion { get; set; }

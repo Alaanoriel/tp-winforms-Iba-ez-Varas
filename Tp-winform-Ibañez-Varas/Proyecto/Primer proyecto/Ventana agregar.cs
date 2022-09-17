@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Clases;
+
 
 namespace Primer_proyecto
 {
@@ -19,21 +21,29 @@ namespace Primer_proyecto
 
         private void Txtbox_CodigoArticulo_TextChanged(object sender, EventArgs e)
         {
+         ///Clicklee mal xd
+        }
+
+        private void Button_Agregar_Click(object sender, EventArgs e)
+        {
             Artiuclo Producto = new Artiuclo();
+
             try
             {
-               // Producto.Codigo = int.Parse(Txtbox_CodigoArticulo.Text);
+                Producto.Codigo = Txtbox_CodigoArticulo.Text;
+                Producto.Nombre = Txtbox_Nombre.Text;
+               // Producto.Precio = int.Parse(Txtbox_Precio);
 
 
             }
 
-            catch 
+            catch
             {
-            
-            
-           
-            
+
+
             }
+                    
+
 
         }
     }

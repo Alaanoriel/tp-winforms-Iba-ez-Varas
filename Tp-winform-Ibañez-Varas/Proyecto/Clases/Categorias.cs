@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Primer_proyecto
+namespace Clases
 {
-    class Categorias
+   public class Categorias
     {
 
         public int Id { get; set; } 
