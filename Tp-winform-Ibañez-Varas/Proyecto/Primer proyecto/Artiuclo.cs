@@ -13,8 +13,6 @@ namespace Primer_proyecto
         private string descripcion;
         private decimal precio;
         private string urlimagen;
-        
-
 
         public string Nombre
         {
@@ -96,5 +94,9 @@ namespace Primer_proyecto
             }
             get { return urlimagen; }
         }
+        public Categorias Tipo { get; set; }
+        public Marca Marca { get; set; }
+
+
     }
 }

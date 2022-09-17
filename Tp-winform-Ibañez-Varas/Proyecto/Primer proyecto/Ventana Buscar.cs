@@ -39,8 +39,8 @@ namespace Primer_proyecto
                 ArticuloDatos datos = new ArticuloDatos();
                 listaArticulos = datos.Listar();
                 dgvDatos.DataSource = listaArticulos;
-
-                CargarImagen(listaArticulos[0].UrlImagen);
+                dgvDatos.Columns["UrlImagen"].Visible = false;
+               CargarImagen(listaArticulos[0].UrlImagen);
             }
             catch (Exception)
             {
@@ -53,7 +53,9 @@ namespace Primer_proyecto
         private void dgvDatos_SelectionChanged(object sender, EventArgs e)
         {           
             Artiuclo Seleccionado = (Artiuclo)dgvDatos.CurrentRow.DataBoundItem;
-            CargarImagen(Seleccionado.UrlImagen);    
+            CargarImagen(Seleccionado.UrlImagen);
+    
+
         }
 
         

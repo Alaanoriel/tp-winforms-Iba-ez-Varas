@@ -22,7 +22,7 @@ namespace Primer_proyecto
             {
                 conexion.ConnectionString = "server=.\\SQLEXPRESS; database=CATALOGO_DB; integrated security=true";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "Select Codigo, Nombre, Descripcion, ImagenUrl, Precio From ARTICULOS";
+                comando.CommandText = "Select Codigo, Nombre, A.Descripcion, ImagenUrl, Precio, B.Descripcion Tipo, C.Descripcion Marca From ARTICULOS A, Categorias B, Marcas C Where A.Id = B.Id and B.Id = C.Id";
                 comando.Connection = conexion;
                 
                 conexion.Open();
@@ -35,8 +35,13 @@ namespace Primer_proyecto
                     aux.Nombre = (string)lector["Nombre"];
                     aux.Descripcion = (string)lector["Descripcion"];
                     aux.UrlImagen = (string)lector["ImagenUrl"];
-                    aux.Precio = Decimal.Round((decimal)lector["Precio"], 2); 
-                    
+                    aux.Precio = Decimal.Round((decimal)lector["Precio"], 2);
+                    aux.Tipo = new Categorias();
+                    aux.Tipo.Descripcion = (string)lector["Tipo"];
+                    aux.Marca = new Marca();
+                    aux.Marca.Descripcion = (string)lector["Marca"];
+
+
 
                     lista.Add(aux);
                 }

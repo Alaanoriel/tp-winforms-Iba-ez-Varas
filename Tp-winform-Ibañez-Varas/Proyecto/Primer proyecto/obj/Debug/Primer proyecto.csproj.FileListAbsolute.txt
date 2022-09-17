@@ -45,3 +45,15 @@ B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Vara
 B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.CoreCompileInputs.cache
 B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.exe
 B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.pdb
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Primer proyecto.exe.config
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Primer proyecto.exe
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Primer proyecto.pdb
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.AssemblyReference.cache
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Form1.resources
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Properties.Resources.resources
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Ventana_agregar.resources
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer_proyecto.Ventana_Buscar.resources
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.GenerateResource.cache
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.CoreCompileInputs.cache
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.exe
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.pdb

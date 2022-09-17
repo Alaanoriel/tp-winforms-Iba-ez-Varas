@@ -66,6 +66,7 @@ namespace Primer_proyecto
             this.Txtbox_CodigoArticulo.Name = "Txtbox_CodigoArticulo";
             this.Txtbox_CodigoArticulo.Size = new System.Drawing.Size(156, 20);
             this.Txtbox_CodigoArticulo.TabIndex = 1;
+            this.Txtbox_CodigoArticulo.TextChanged += new System.EventHandler(this.Txtbox_CodigoArticulo_TextChanged);
             // 
             // Label_Nombre
             // 

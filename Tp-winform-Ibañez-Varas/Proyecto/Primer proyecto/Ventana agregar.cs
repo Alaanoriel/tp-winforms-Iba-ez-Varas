@@ -16,5 +16,25 @@ namespace Primer_proyecto
         {
             InitializeComponent();
         }
+
+        private void Txtbox_CodigoArticulo_TextChanged(object sender, EventArgs e)
+        {
+            Artiuclo Producto = new Artiuclo();
+            try
+            {
+               // Producto.Codigo = int.Parse(Txtbox_CodigoArticulo.Text);
+
+
+            }
+
+            catch 
+            {
+            
+            
+           
+            
+            }
+
+        }
     }
 }
