@@ -3,3 +3,4 @@ C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proy
 C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Clases\obj\Debug\Clases.csproj.CoreCompileInputs.cache
 C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Clases\obj\Debug\Clases.dll
 C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Clases\obj\Debug\Clases.pdb
+C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Clases\obj\Debug\Clases.csproj.AssemblyReference.cache

@@ -32,7 +32,8 @@ namespace Primer_proyecto
             {
                 Producto.Codigo = Txtbox_CodigoArticulo.Text;
                 Producto.Nombre = Txtbox_Nombre.Text;
-               // Producto.Precio = int.Parse(Txtbox_Precio);
+                // Producto.Precio = int.Parse(Txtbox_Precio);
+                Producto.Descripcion = Txtbox_Descripcion.Text;
 
 
             }
