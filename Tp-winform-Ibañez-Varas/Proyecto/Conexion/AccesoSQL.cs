@@ -55,6 +55,25 @@ namespace Conexion
             }
         }
 
+        public void EjecutarAccion() 
+        {
+            Comando.Connection = Conexion;
+      
+            try
+            {
+                Conexion.Open();
+                Comando.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        
+        }
+
+
         public void CerrarConexion()
         {
 

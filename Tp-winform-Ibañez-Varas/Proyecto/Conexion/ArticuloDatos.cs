@@ -58,10 +58,39 @@ namespace Conexion
 
             
         }
+
+
+        public void Agregar(Artiuclo Nuevo) 
+        {
+
+            AccesoSQL acceso = new AccesoSQL();
+
+            try
+            {
+
+                acceso.Consulta("Insert into ARTICULOS (Codigo,Nombre,Descripcion) values(" + Nuevo.Codigo + ",'" + Nuevo.Nombre + "','" + Nuevo.Descripcion+"')");
+                acceso.EjecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally 
+            {
+                acceso.CerrarConexion();
+            }
+        }
+    
+    
+    
+    
+    
     }
 
 
-
+    
 }
 
 

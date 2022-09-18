@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Clases;
+using Conexion;
 
 
 namespace Primer_proyecto
@@ -27,6 +28,7 @@ namespace Primer_proyecto
         private void Button_Agregar_Click(object sender, EventArgs e)
         {
             Artiuclo Producto = new Artiuclo();
+            ArticuloDatos Dato = new ArticuloDatos();
 
             try
             {
@@ -34,13 +36,15 @@ namespace Primer_proyecto
                 Producto.Nombre = Txtbox_Nombre.Text;
                 // Producto.Precio = int.Parse(Txtbox_Precio);
                 Producto.Descripcion = Txtbox_Descripcion.Text;
-
+                Dato.Agregar(Producto);
+                MessageBox.Show("Agregado con exito");
+                Close();
 
             }
 
-            catch
+            catch(Exception ex)
             {
-
+                MessageBox.Show(ex.ToString());
 
             }
                     
