@@ -51,5 +51,24 @@ namespace Primer_proyecto
 
 
         }
+
+        private void Ventana_agregar_Load(object sender, EventArgs e)
+        {
+            CategoriasDatos Categoria = new CategoriasDatos();
+            MarcaDatos Marca = new MarcaDatos();
+
+            try
+            {
+                ///Error en "AccesoSQL"  get { return lector; } StackOverFlowException
+                ComboBox_Categoria.DataSource = Categoria.Listar();
+                ComboBox_Marca.DataSource = Marca.Listar();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }

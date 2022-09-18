@@ -68,7 +68,7 @@ namespace Conexion
             try
             {
 
-                acceso.Consulta("Insert into ARTICULOS (Codigo,Nombre,Descripcion) values(" + Nuevo.Codigo + ",'" + Nuevo.Nombre + "','" + Nuevo.Descripcion+"')");
+                acceso.Consulta("Insert into Articulos(Codigo,Nombre,Descripcion)values(1,'','')");
                 acceso.EjecutarAccion();
 
             }

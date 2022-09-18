@@ -150,6 +150,7 @@ namespace Primer_proyecto
             // 
             // ComboBox_Categoria
             // 
+            this.ComboBox_Categoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_Categoria.FormattingEnabled = true;
             this.ComboBox_Categoria.Location = new System.Drawing.Point(172, 146);
             this.ComboBox_Categoria.Name = "ComboBox_Categoria";
@@ -237,6 +238,7 @@ namespace Primer_proyecto
             this.Controls.Add(this.Label_CodigoArticulo);
             this.Name = "Ventana_agregar";
             this.Text = "Nuevo producto";
+            this.Load += new System.EventHandler(this.Ventana_agregar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_Productos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
