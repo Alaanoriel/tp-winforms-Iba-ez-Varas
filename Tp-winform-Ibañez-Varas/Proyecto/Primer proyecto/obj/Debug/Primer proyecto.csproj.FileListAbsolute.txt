@@ -62,3 +62,8 @@ C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proy
 C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Clases.pdb
 C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Conexion.pdb
 C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.CopyComplete
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Clases.dll
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Conexion.dll
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Clases.pdb
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\bin\Debug\Conexion.pdb
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Primer proyecto\obj\Debug\Primer proyecto.csproj.CopyComplete

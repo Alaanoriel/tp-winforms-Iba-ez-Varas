@@ -7,3 +7,12 @@ C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proy
 C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Conexion\obj\Debug\Conexion.csproj.CopyComplete
 C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Conexion\obj\Debug\Conexion.dll
 C:\Users\parac\Source\Repos\Alaanoriel\tp-winforms\Tp-winform-Ibañez-Varas\Proyecto\Conexion\obj\Debug\Conexion.pdb
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Conexion\obj\Debug\Conexion.csproj.AssemblyReference.cache
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Conexion\obj\Debug\Conexion.csproj.CoreCompileInputs.cache
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Conexion\obj\Debug\Conexion.dll
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Conexion\obj\Debug\Conexion.pdb
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Conexion\bin\Debug\Conexion.dll
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Conexion\bin\Debug\Conexion.pdb
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Conexion\bin\Debug\Clases.dll
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Conexion\bin\Debug\Clases.pdb
+B:\Onedrive\OneDrive - frgp.utn.edu.ar\Documentos\Github\tp-winforms-Iba-ez-Varas\Tp-winform-Ibañez-Varas\Proyecto\Conexion\obj\Debug\Conexion.csproj.CopyComplete

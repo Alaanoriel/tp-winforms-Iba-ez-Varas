@@ -12,10 +12,10 @@ namespace Conexion
 
         private SqlConnection Conexion;
         private SqlCommand Comando;
-        private SqlDataReader Lector;
+        private SqlDataReader lector;
 
 
-        public SqlDataReader lector
+        public SqlDataReader Lector
         {
             get { return lector; }
 
@@ -45,7 +45,7 @@ namespace Conexion
             try
             {
                 Conexion.Open();
-                Lector = Comando.ExecuteReader();
+                lector = Comando.ExecuteReader();
 
             }
             catch(Exception ex)

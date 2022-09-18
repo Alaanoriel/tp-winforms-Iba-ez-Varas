@@ -16,14 +16,15 @@ namespace Conexion
 
             try
             {
-                Datos.Consulta("Select Id,Descripcion from MARCAS");
+                //Faltaba el alias de Descripcion "Marca" (Select Id,Descripcion from MARCAS)
+                Datos.Consulta("Select Id,Descripcion as Marca from MARCAS");
                 Datos.EjecutarLectura();
 
-                while (Datos.lector.Read())
+                while (Datos.Lector.Read())
                 {
                     Marca aux = new Marca();
-                    aux.Id = (int)Datos.lector["Id"];
-                    aux.Descripcion = (string)Datos.lector["Marca"];
+                    aux.Id = (int)Datos.Lector["Id"];
+                    aux.Descripcion = (string)Datos.Lector["Marca"];
                     Listar.Add(aux);
 
                 }
@@ -34,7 +35,7 @@ namespace Conexion
             catch (Exception ex)
 
             {
-
+                
                 throw ex;
             }
 

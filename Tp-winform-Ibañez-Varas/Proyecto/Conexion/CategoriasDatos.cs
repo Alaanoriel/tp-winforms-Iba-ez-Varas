@@ -16,14 +16,15 @@ namespace Conexion
 
             try
             {
-                Datos.Consulta("Select Id,Descripcion From CATEGORIAS");
+                //Faltaba el alias de Descripcion "Tipo" (Select Id,Descripcion From CATEGORIAS)
+                Datos.Consulta("Select Id,Descripcion as Tipo From CATEGORIAS");
                 Datos.EjecutarLectura();
                
-                while (Datos.lector.Read())
+                while (Datos.Lector.Read())
                 {
                     Categorias aux = new Categorias();
-                    aux.Id = (int)Datos.lector["Id"];
-                    aux.Descripcion = (string)Datos.lector["Tipo"];
+                    aux.Id = (int)Datos.Lector["Id"];
+                    aux.Descripcion = (string)Datos.Lector["Tipo"];
                     Listar.Add(aux);
 
                 }
