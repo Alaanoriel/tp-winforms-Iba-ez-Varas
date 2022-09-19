@@ -33,10 +33,13 @@ namespace Conexion
             }
 
             catch (Exception ex)
-
             {
                 
                 throw ex;
+            }
+            finally
+            {
+                Datos.CerrarConexion();
             }
 
         }

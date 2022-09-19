@@ -66,6 +66,7 @@ namespace Primer_proyecto
             this.btnBuscar.TabIndex = 4;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnModificar
             // 
@@ -97,6 +98,11 @@ namespace Primer_proyecto
             // cbxTipoBusqueda
             // 
             this.cbxTipoBusqueda.FormattingEnabled = true;
+            this.cbxTipoBusqueda.Items.AddRange(new object[] {
+            "ID",
+            "Nombre",
+            "Categoria",
+            "Marca"});
             this.cbxTipoBusqueda.Location = new System.Drawing.Point(527, 32);
             this.cbxTipoBusqueda.Name = "cbxTipoBusqueda";
             this.cbxTipoBusqueda.Size = new System.Drawing.Size(209, 21);

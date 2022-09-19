@@ -38,6 +38,10 @@ namespace Conexion
 
                 throw ex;
             }
+            finally
+            {
+                Datos.CerrarConexion();
+            }
 
         }
 

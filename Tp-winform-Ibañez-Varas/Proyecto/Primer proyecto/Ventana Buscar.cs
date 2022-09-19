@@ -29,6 +29,19 @@ namespace Primer_proyecto
         }
 
 
+        private void ActualizarListado()
+        {
+            try
+            {               
+                //Agregar columnas
+                dgvDatos.DataSource = listaArticulos;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
         public Ventana_Buscar()
         {
             InitializeComponent();
@@ -60,6 +73,44 @@ namespace Primer_proyecto
 
         }
 
-        
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ArticuloDatos busqueda = new ArticuloDatos();
+                string valorbuscado = txtbDatosABuscar.Text;
+                string criterio = "";
+                if (cbxTipoBusqueda.SelectedIndex==0)
+                {
+                    criterio = "A.ID";
+                }else if (cbxTipoBusqueda.SelectedIndex == 1)
+                {
+                    criterio = "A.Nombre";
+                }else if (cbxTipoBusqueda.SelectedIndex == 2)
+                {
+                    criterio = "C.Descripcion";
+                }else if (cbxTipoBusqueda.SelectedIndex == 3)
+                {
+                    criterio = "M.Descripcion";
+                }
+                if(criterio=="")
+                {
+                    MessageBox.Show("Por favor seleccione un cirterio de busqueda");
+                    return;
+                }
+                listaArticulos = busqueda.Buscar(criterio, valorbuscado);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                ActualizarListado();
+            }
+        }
+
+
     }
 }
