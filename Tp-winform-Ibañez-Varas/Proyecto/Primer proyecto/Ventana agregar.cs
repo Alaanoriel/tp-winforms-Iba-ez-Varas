@@ -41,7 +41,7 @@ namespace Primer_proyecto
                 Producto.Tipo = (Categorias)ComboBox_Categoria.SelectedItem;
                 Dato.Agregar(Producto);
                 MessageBox.Show("Agregado con exito");
-                Close();
+                
 
             }
 

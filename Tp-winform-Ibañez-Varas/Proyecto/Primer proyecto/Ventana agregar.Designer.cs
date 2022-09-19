@@ -89,7 +89,7 @@ namespace Primer_proyecto
             // 
             this.Label_Precio.AutoSize = true;
             this.Label_Precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Precio.Location = new System.Drawing.Point(424, 64);
+            this.Label_Precio.Location = new System.Drawing.Point(369, 64);
             this.Label_Precio.Name = "Label_Precio";
             this.Label_Precio.Size = new System.Drawing.Size(59, 20);
             this.Label_Precio.TabIndex = 4;
@@ -97,16 +97,16 @@ namespace Primer_proyecto
             // 
             // Txtbox_Precio
             // 
-            this.Txtbox_Precio.Location = new System.Drawing.Point(522, 66);
+            this.Txtbox_Precio.Location = new System.Drawing.Point(462, 64);
             this.Txtbox_Precio.Name = "Txtbox_Precio";
-            this.Txtbox_Precio.Size = new System.Drawing.Size(218, 20);
+            this.Txtbox_Precio.Size = new System.Drawing.Size(160, 20);
             this.Txtbox_Precio.TabIndex = 5;
             // 
             // Label_Descripcion
             // 
             this.Label_Descripcion.AutoSize = true;
             this.Label_Descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Descripcion.Location = new System.Drawing.Point(403, 20);
+            this.Label_Descripcion.Location = new System.Drawing.Point(353, 20);
             this.Label_Descripcion.Name = "Label_Descripcion";
             this.Label_Descripcion.Size = new System.Drawing.Size(103, 20);
             this.Label_Descripcion.TabIndex = 6;
@@ -114,10 +114,10 @@ namespace Primer_proyecto
             // 
             // Txtbox_Descripcion
             // 
-            this.Txtbox_Descripcion.Location = new System.Drawing.Point(522, 3);
+            this.Txtbox_Descripcion.Location = new System.Drawing.Point(462, 20);
             this.Txtbox_Descripcion.Multiline = true;
             this.Txtbox_Descripcion.Name = "Txtbox_Descripcion";
-            this.Txtbox_Descripcion.Size = new System.Drawing.Size(218, 50);
+            this.Txtbox_Descripcion.Size = new System.Drawing.Size(160, 22);
             this.Txtbox_Descripcion.TabIndex = 7;
             // 
             // Label_Marca
@@ -162,7 +162,7 @@ namespace Primer_proyecto
             // 
             this.Label_Imagen.AutoSize = true;
             this.Label_Imagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Imagen.Location = new System.Drawing.Point(424, 107);
+            this.Label_Imagen.Location = new System.Drawing.Point(369, 104);
             this.Label_Imagen.Name = "Label_Imagen";
             this.Label_Imagen.Size = new System.Drawing.Size(69, 20);
             this.Label_Imagen.TabIndex = 12;

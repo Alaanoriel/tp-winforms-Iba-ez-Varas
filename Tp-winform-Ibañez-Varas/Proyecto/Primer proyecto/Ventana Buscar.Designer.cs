@@ -97,6 +97,7 @@ namespace Primer_proyecto
             // 
             // cbxTipoBusqueda
             // 
+            this.cbxTipoBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxTipoBusqueda.FormattingEnabled = true;
             this.cbxTipoBusqueda.Items.AddRange(new object[] {
             "ID",
