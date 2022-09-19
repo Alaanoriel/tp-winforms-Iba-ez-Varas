@@ -25,7 +25,9 @@ namespace Conexion
                     aux.Codigo = (string)Datos.Lector["Codigo"];
                     aux.Nombre = (string)Datos.Lector["Nombre"];
                     aux.Descripcion = (string)Datos.Lector["Descripcion"];
-                    aux.UrlImagen = (string)Datos.Lector["ImagenUrl"];
+                    ///Verifico que la URL de la imagen no sea NULA
+                    if(!(Datos.Lector["ImagenUrl"] is DBNull))
+                        aux.UrlImagen = (string)Datos.Lector["ImagenUrl"];
                     aux.Precio = Decimal.Round((decimal)Datos.Lector["Precio"], 2);
                     aux.Tipo = new Categorias();
                     aux.Tipo.Descripcion = (string)Datos.Lector["Tipo"];
