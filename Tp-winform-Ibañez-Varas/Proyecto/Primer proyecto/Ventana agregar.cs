@@ -34,8 +34,10 @@ namespace Primer_proyecto
             {
                 Producto.Codigo = Txtbox_CodigoArticulo.Text;
                 Producto.Nombre = Txtbox_Nombre.Text;
-                // Producto.Precio = int.Parse(Txtbox_Precio);
+                //Producto.Precio = Decimal.Round(Convert.ToDecimal(Txtbox_Precio),2);
                 Producto.Descripcion = Txtbox_Descripcion.Text;
+                Producto.Marca = (Marca)ComboBox_Marca.SelectedItem;
+                Producto.Tipo = (Categorias)ComboBox_Categoria.SelectedItem;
                 Dato.Agregar(Producto);
                 MessageBox.Show("Agregado con exito");
                 Close();

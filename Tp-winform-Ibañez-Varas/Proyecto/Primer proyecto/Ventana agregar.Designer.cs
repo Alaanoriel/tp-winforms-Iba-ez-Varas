@@ -142,6 +142,7 @@ namespace Primer_proyecto
             // 
             // ComboBox_Marca
             // 
+            this.ComboBox_Marca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_Marca.FormattingEnabled = true;
             this.ComboBox_Marca.Location = new System.Drawing.Point(172, 106);
             this.ComboBox_Marca.Name = "ComboBox_Marca";
