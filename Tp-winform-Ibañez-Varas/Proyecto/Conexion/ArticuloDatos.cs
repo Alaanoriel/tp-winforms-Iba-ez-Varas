@@ -58,7 +58,9 @@ namespace Conexion
             try
             {
 
-                acceso.Consulta("Insert into Articulos(Codigo,Nombre,Descripcion)values(1,'','')");
+                acceso.Consulta("Insert into ARTICULOS(Codigo,Nombre,Descripcion,Precio,IdMarca,IdCategoria)values(" + Nuevo.Codigo + ",'" + Nuevo.Nombre + "','" + Nuevo.Descripcion + "',1, @IdMarca,@IdCategoria)");
+                acceso.SetParametros("@IdMarca", Nuevo.Marca.Id);
+                acceso.SetParametros("@IdCategoria", Nuevo.Tipo.Id);
                 acceso.EjecutarAccion();
 
             }

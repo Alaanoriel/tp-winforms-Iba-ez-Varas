@@ -73,6 +73,12 @@ namespace Conexion
         
         }
 
+        public void SetParametros(string Nombre, object Valor) 
+        {
+            Comando.Parameters.AddWithValue(Nombre,Valor);
+        
+        
+        }
 
         public void CerrarConexion()
         {
