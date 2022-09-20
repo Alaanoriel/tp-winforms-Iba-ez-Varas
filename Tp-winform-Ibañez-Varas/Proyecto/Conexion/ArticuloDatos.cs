@@ -60,9 +60,10 @@ namespace Conexion
             try
             {
 
-                acceso.Consulta("Insert into ARTICULOS(Codigo, Nombre, Descripcion, Precio, IdMarca, IdCategoria) VALUES('"+ Nuevo.Codigo + "' , '"+ Nuevo.Nombre +"' , '"+ Nuevo.Descripcion +"', " + Nuevo.Precio + ", @IdMarca, @IdCategoria )");
+                acceso.Consulta("Insert into ARTICULOS(Codigo, Nombre, Descripcion, Precio, IdMarca, IdCategoria, ImagenUrl) VALUES('" + Nuevo.Codigo + "' , '"+ Nuevo.Nombre +"' , '"+ Nuevo.Descripcion +"', " + Nuevo.Precio + ", @IdMarca, @IdCategoria, @ImagenUrl )");
                 acceso.SetParametros("@IdMarca", Nuevo.Marca.Id);
                 acceso.SetParametros("@IdCategoria", Nuevo.Tipo.Id);
+                acceso.SetParametros("@ImagenUrl", Nuevo.UrlImagen);
                 acceso.EjecutarAccion();
 
             }

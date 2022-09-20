@@ -42,12 +42,11 @@ namespace Primer_proyecto
             this.ComboBox_Marca = new System.Windows.Forms.ComboBox();
             this.ComboBox_Categoria = new System.Windows.Forms.ComboBox();
             this.Label_Imagen = new System.Windows.Forms.Label();
-            this.DataGrid_Productos = new System.Windows.Forms.DataGridView();
             this.Button_Agregar = new System.Windows.Forms.Button();
-            this.Button_Modificar = new System.Windows.Forms.Button();
-            this.Button_Eliminar = new System.Windows.Forms.Button();
             this.Button_Celdas = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid_Productos)).BeginInit();
+            this.Txtbox_Urlimagen = new System.Windows.Forms.TextBox();
+            this.PictureBox_Urlimagen = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Urlimagen)).BeginInit();
             this.SuspendLayout();
             // 
             // Label_CodigoArticulo
@@ -65,7 +64,7 @@ namespace Primer_proyecto
             this.Txtbox_CodigoArticulo.Location = new System.Drawing.Point(172, 20);
             this.Txtbox_CodigoArticulo.Name = "Txtbox_CodigoArticulo";
             this.Txtbox_CodigoArticulo.Size = new System.Drawing.Size(156, 20);
-            this.Txtbox_CodigoArticulo.TabIndex = 1;
+            this.Txtbox_CodigoArticulo.TabIndex = 0;
             this.Txtbox_CodigoArticulo.TextChanged += new System.EventHandler(this.Txtbox_CodigoArticulo_TextChanged);
             // 
             // Label_Nombre
@@ -83,7 +82,7 @@ namespace Primer_proyecto
             this.Txtbox_Nombre.Location = new System.Drawing.Point(172, 64);
             this.Txtbox_Nombre.Name = "Txtbox_Nombre";
             this.Txtbox_Nombre.Size = new System.Drawing.Size(156, 20);
-            this.Txtbox_Nombre.TabIndex = 3;
+            this.Txtbox_Nombre.TabIndex = 1;
             // 
             // Label_Precio
             // 
@@ -99,7 +98,7 @@ namespace Primer_proyecto
             // 
             this.Txtbox_Precio.Location = new System.Drawing.Point(462, 64);
             this.Txtbox_Precio.Name = "Txtbox_Precio";
-            this.Txtbox_Precio.Size = new System.Drawing.Size(160, 20);
+            this.Txtbox_Precio.Size = new System.Drawing.Size(156, 20);
             this.Txtbox_Precio.TabIndex = 5;
             // 
             // Label_Descripcion
@@ -117,8 +116,8 @@ namespace Primer_proyecto
             this.Txtbox_Descripcion.Location = new System.Drawing.Point(462, 20);
             this.Txtbox_Descripcion.Multiline = true;
             this.Txtbox_Descripcion.Name = "Txtbox_Descripcion";
-            this.Txtbox_Descripcion.Size = new System.Drawing.Size(160, 22);
-            this.Txtbox_Descripcion.TabIndex = 7;
+            this.Txtbox_Descripcion.Size = new System.Drawing.Size(156, 20);
+            this.Txtbox_Descripcion.TabIndex = 4;
             // 
             // Label_Marca
             // 
@@ -147,7 +146,7 @@ namespace Primer_proyecto
             this.ComboBox_Marca.Location = new System.Drawing.Point(172, 106);
             this.ComboBox_Marca.Name = "ComboBox_Marca";
             this.ComboBox_Marca.Size = new System.Drawing.Size(156, 21);
-            this.ComboBox_Marca.TabIndex = 10;
+            this.ComboBox_Marca.TabIndex = 2;
             // 
             // ComboBox_Categoria
             // 
@@ -156,74 +155,63 @@ namespace Primer_proyecto
             this.ComboBox_Categoria.Location = new System.Drawing.Point(172, 146);
             this.ComboBox_Categoria.Name = "ComboBox_Categoria";
             this.ComboBox_Categoria.Size = new System.Drawing.Size(156, 21);
-            this.ComboBox_Categoria.TabIndex = 11;
+            this.ComboBox_Categoria.TabIndex = 3;
             // 
             // Label_Imagen
             // 
             this.Label_Imagen.AutoSize = true;
             this.Label_Imagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Imagen.Location = new System.Drawing.Point(369, 104);
+            this.Label_Imagen.Location = new System.Drawing.Point(369, 107);
             this.Label_Imagen.Name = "Label_Imagen";
             this.Label_Imagen.Size = new System.Drawing.Size(69, 20);
             this.Label_Imagen.TabIndex = 12;
             this.Label_Imagen.Text = "Imagen";
             // 
-            // DataGrid_Productos
-            // 
-            this.DataGrid_Productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGrid_Productos.Location = new System.Drawing.Point(172, 195);
-            this.DataGrid_Productos.Name = "DataGrid_Productos";
-            this.DataGrid_Productos.Size = new System.Drawing.Size(568, 166);
-            this.DataGrid_Productos.TabIndex = 13;
-            // 
             // Button_Agregar
             // 
-            this.Button_Agregar.Location = new System.Drawing.Point(43, 195);
+            this.Button_Agregar.Location = new System.Drawing.Point(357, 146);
             this.Button_Agregar.Name = "Button_Agregar";
-            this.Button_Agregar.Size = new System.Drawing.Size(123, 36);
-            this.Button_Agregar.TabIndex = 14;
+            this.Button_Agregar.Size = new System.Drawing.Size(130, 22);
+            this.Button_Agregar.TabIndex = 7;
             this.Button_Agregar.Text = "Agregar producto";
             this.Button_Agregar.UseVisualStyleBackColor = true;
             this.Button_Agregar.Click += new System.EventHandler(this.Button_Agregar_Click);
             // 
-            // Button_Modificar
-            // 
-            this.Button_Modificar.Location = new System.Drawing.Point(43, 237);
-            this.Button_Modificar.Name = "Button_Modificar";
-            this.Button_Modificar.Size = new System.Drawing.Size(123, 36);
-            this.Button_Modificar.TabIndex = 15;
-            this.Button_Modificar.Text = "Modificar";
-            this.Button_Modificar.UseVisualStyleBackColor = true;
-            // 
-            // Button_Eliminar
-            // 
-            this.Button_Eliminar.Location = new System.Drawing.Point(43, 279);
-            this.Button_Eliminar.Name = "Button_Eliminar";
-            this.Button_Eliminar.Size = new System.Drawing.Size(123, 36);
-            this.Button_Eliminar.TabIndex = 16;
-            this.Button_Eliminar.Text = "Eliminar";
-            this.Button_Eliminar.UseVisualStyleBackColor = true;
-            // 
             // Button_Celdas
             // 
-            this.Button_Celdas.Location = new System.Drawing.Point(43, 321);
+            this.Button_Celdas.Location = new System.Drawing.Point(488, 146);
             this.Button_Celdas.Name = "Button_Celdas";
-            this.Button_Celdas.Size = new System.Drawing.Size(123, 36);
-            this.Button_Celdas.TabIndex = 17;
+            this.Button_Celdas.Size = new System.Drawing.Size(130, 22);
+            this.Button_Celdas.TabIndex = 8;
             this.Button_Celdas.Text = "Limpiar celdas";
             this.Button_Celdas.UseVisualStyleBackColor = true;
+            // 
+            // Txtbox_Urlimagen
+            // 
+            this.Txtbox_Urlimagen.Location = new System.Drawing.Point(462, 109);
+            this.Txtbox_Urlimagen.Name = "Txtbox_Urlimagen";
+            this.Txtbox_Urlimagen.Size = new System.Drawing.Size(156, 20);
+            this.Txtbox_Urlimagen.TabIndex = 6;
+            this.Txtbox_Urlimagen.Leave += new System.EventHandler(this.Txtbox_Urlimagen_Leave);
+            // 
+            // PictureBox_Urlimagen
+            // 
+            this.PictureBox_Urlimagen.Location = new System.Drawing.Point(642, 20);
+            this.PictureBox_Urlimagen.Name = "PictureBox_Urlimagen";
+            this.PictureBox_Urlimagen.Size = new System.Drawing.Size(199, 148);
+            this.PictureBox_Urlimagen.TabIndex = 19;
+            this.PictureBox_Urlimagen.TabStop = false;
             // 
             // Ventana_agregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(754, 373);
+            this.ClientSize = new System.Drawing.Size(853, 187);
+            this.Controls.Add(this.PictureBox_Urlimagen);
+            this.Controls.Add(this.Txtbox_Urlimagen);
             this.Controls.Add(this.Button_Celdas);
-            this.Controls.Add(this.Button_Eliminar);
-            this.Controls.Add(this.Button_Modificar);
             this.Controls.Add(this.Button_Agregar);
-            this.Controls.Add(this.DataGrid_Productos);
             this.Controls.Add(this.Label_Imagen);
             this.Controls.Add(this.ComboBox_Categoria);
             this.Controls.Add(this.ComboBox_Marca);
@@ -240,7 +228,7 @@ namespace Primer_proyecto
             this.Name = "Ventana_agregar";
             this.Text = "Nuevo producto";
             this.Load += new System.EventHandler(this.Ventana_agregar_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid_Productos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Urlimagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,10 +249,9 @@ namespace Primer_proyecto
         private System.Windows.Forms.ComboBox ComboBox_Marca;
         private System.Windows.Forms.ComboBox ComboBox_Categoria;
         private System.Windows.Forms.Label Label_Imagen;
-        private System.Windows.Forms.DataGridView DataGrid_Productos;
         private System.Windows.Forms.Button Button_Agregar;
-        private System.Windows.Forms.Button Button_Modificar;
-        private System.Windows.Forms.Button Button_Eliminar;
         private System.Windows.Forms.Button Button_Celdas;
+        private System.Windows.Forms.TextBox Txtbox_Urlimagen;
+        private System.Windows.Forms.PictureBox PictureBox_Urlimagen;
     }
 }

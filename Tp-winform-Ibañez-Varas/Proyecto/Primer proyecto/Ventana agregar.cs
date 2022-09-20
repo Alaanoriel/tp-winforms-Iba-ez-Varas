@@ -37,6 +37,7 @@ namespace Primer_proyecto
                 Producto.Nombre = Txtbox_Nombre.Text;
                 Producto.Precio = Convert.ToDecimal(Txtbox_Precio.Text);
                 Producto.Descripcion = Txtbox_Descripcion.Text;
+                Producto.UrlImagen = Txtbox_Urlimagen.Text;
                 Producto.Marca = (Marca)ComboBox_Marca.SelectedItem;
                 Producto.Tipo = (Categorias)ComboBox_Categoria.SelectedItem;
                 Dato.Agregar(Producto);
@@ -71,6 +72,28 @@ namespace Primer_proyecto
             {
 
                 MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void Txtbox_Urlimagen_Leave(object sender, EventArgs e)
+        {
+
+
+            CargarImagen(Txtbox_Urlimagen.Text);
+
+        }
+
+
+        private void CargarImagen(string imagen)
+        {
+            try
+            {
+                PictureBox_Urlimagen.Load(imagen);
+            }
+            catch (Exception ex)
+            {
+
+                PictureBox_Urlimagen.Load("https://media.istockphoto.com/vectors/thumbnail-image-vector-graphic-vector-id1147544807?k=20&m=1147544807&s=612x612&w=0&h=pBhz1dkwsCMq37Udtp9sfxbjaMl27JUapoyYpQm0anc=");
             }
         }
     }
