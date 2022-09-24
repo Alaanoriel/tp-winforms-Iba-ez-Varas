@@ -111,6 +111,22 @@ namespace Primer_proyecto
             }
         }
 
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
 
+            Artiuclo ProductoSeleccionado;
+            ProductoSeleccionado = (Artiuclo)dgvDatos.CurrentRow.DataBoundItem;
+
+            Ventana_agregar Modificar = new Ventana_agregar(ProductoSeleccionado);
+            try
+            {
+                Modificar.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                Modificar.Close();
+                MessageBox.Show("Error en Ventana Agregar");
+            }
+        }
     }
 }

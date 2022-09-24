@@ -15,9 +15,17 @@ namespace Primer_proyecto
 {
     public partial class Ventana_agregar : Form
     {
+
+        private Artiuclo Producto = null;
         public Ventana_agregar()
         {
             InitializeComponent();
+        }
+
+        public Ventana_agregar(Artiuclo Producto)
+        {
+            InitializeComponent();
+            this.Producto = Producto;
         }
 
         private void Txtbox_CodigoArticulo_TextChanged(object sender, EventArgs e)
@@ -63,9 +71,28 @@ namespace Primer_proyecto
 
             try
             {
-                ///Error en "AccesoSQL"  get { return lector; } StackOverFlowException
+               
                 ComboBox_Categoria.DataSource = Categoria.Listar();
+                ComboBox_Categoria.ValueMember = "Id";
+                ComboBox_Categoria.DisplayMember = "Descripcion";
                 ComboBox_Marca.DataSource = Marca.Listar();
+                ComboBox_Marca.ValueMember = "Id";
+                ComboBox_Marca.DisplayMember = "Descripcion";
+
+                if (Producto != null) 
+                {
+                    Txtbox_CodigoArticulo.Text = Producto.Codigo;
+                    Txtbox_Nombre.Text = Producto.Nombre;
+                    //Producto.Precio = Convert.ToDecimal(Txtbox_Precio.Text); Ver esto despues.
+                    Txtbox_Descripcion.Text = Producto.Descripcion;
+                    Txtbox_Urlimagen.Text = Producto.UrlImagen;
+                    CargarImagen(Producto.UrlImagen);
+                    ComboBox_Categoria.SelectedValue = Producto.Tipo.Id;
+                    ComboBox_Marca.SelectedValue = Producto.Marca.Id;
+                
+                
+                }
+
 
             }
             catch (Exception ex)

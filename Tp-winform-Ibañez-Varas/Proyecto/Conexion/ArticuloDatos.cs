@@ -17,7 +17,7 @@ namespace Conexion
             AccesoSQL Datos = new AccesoSQL();
             try
             {
-                Datos.Consulta("Select A.Codigo, A.Nombre, A.Descripcion, A.ImagenUrl, A.Precio , C.Descripcion Tipo, M.Descripcion Marca From ARTICULOS A  Inner Join MARCAS M on A.IdMarca = M.Id Inner Join CATEGORIAS C on A.IdCategoria = C.Id");
+                Datos.Consulta("Select A.Codigo, A.Nombre, A.Descripcion, A.ImagenUrl, A.Precio , C.Descripcion Tipo, M.Descripcion Marca, M.Id, C.iD From ARTICULOS A  Inner Join MARCAS M on A.IdMarca = M.Id Inner Join CATEGORIAS C on A.IdCategoria = C.Id");
                 Datos.EjecutarLectura();
                 while (Datos.Lector.Read())
                 {

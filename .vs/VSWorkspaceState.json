@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Tp-winform-Ibañez-Varas",
+    "\\Tp-winform-Ibañez-Varas\\Proyecto",
+    "\\Tp-winform-Ibañez-Varas\\Proyecto\\Primer proyecto"
   ],
-  "SelectedNode": "\\TPWinForms-Ibañez-Varas.sln",
+  "SelectedNode": "\\Tp-winform-Ibañez-Varas\\Proyecto\\Primer proyecto\\Ventana agregar.cs",
   "PreviewInSolutionExplorer": false
 }

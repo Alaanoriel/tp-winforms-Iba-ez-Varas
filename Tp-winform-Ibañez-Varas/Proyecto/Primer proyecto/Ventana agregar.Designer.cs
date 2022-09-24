@@ -225,7 +225,10 @@ namespace Primer_proyecto
             this.Controls.Add(this.Label_Nombre);
             this.Controls.Add(this.Txtbox_CodigoArticulo);
             this.Controls.Add(this.Label_CodigoArticulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Ventana_agregar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo producto";
             this.Load += new System.EventHandler(this.Ventana_agregar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Urlimagen)).EndInit();
