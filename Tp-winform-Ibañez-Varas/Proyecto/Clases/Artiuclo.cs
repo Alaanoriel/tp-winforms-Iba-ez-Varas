@@ -14,6 +14,8 @@ namespace Clases
         private decimal precio;
         private string urlimagen;
 
+        public int ID { get; set; }
+
         public string Nombre
         {
             set

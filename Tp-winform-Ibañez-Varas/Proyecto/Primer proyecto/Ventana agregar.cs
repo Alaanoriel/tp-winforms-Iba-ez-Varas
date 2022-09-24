@@ -26,6 +26,7 @@ namespace Primer_proyecto
         {
             InitializeComponent();
             this.Producto = Producto;
+            Text = "Modificar producto";
         }
 
         private void Txtbox_CodigoArticulo_TextChanged(object sender, EventArgs e)
@@ -35,12 +36,15 @@ namespace Primer_proyecto
 
         private void Button_Agregar_Click(object sender, EventArgs e)
         {
-            Artiuclo Producto = new Artiuclo();
+            //Artiuclo Producto = new Artiuclo();
             ArticuloDatos Dato = new ArticuloDatos();
 
             try
             {
-                
+                if (Producto == null)
+                    Producto = new Artiuclo();
+
+
                 Producto.Codigo = Txtbox_CodigoArticulo.Text;
                 Producto.Nombre = Txtbox_Nombre.Text;
                 Producto.Precio = Convert.ToDecimal(Txtbox_Precio.Text);
@@ -48,8 +52,25 @@ namespace Primer_proyecto
                 Producto.UrlImagen = Txtbox_Urlimagen.Text;
                 Producto.Marca = (Marca)ComboBox_Marca.SelectedItem;
                 Producto.Tipo = (Categorias)ComboBox_Categoria.SelectedItem;
-                Dato.Agregar(Producto);
-                MessageBox.Show("Agregado con exito");
+
+                if(Producto.ID != 0)
+                {
+                    Dato.Modificar(Producto);
+                    MessageBox.Show("Modifico con exito");
+
+
+                }
+
+                else
+
+                {
+
+                    Dato.Agregar(Producto);
+                    MessageBox.Show("Agregado con exito");
+
+                }
+
+               
                 
 
             }

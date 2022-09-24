@@ -55,7 +55,8 @@ namespace Primer_proyecto
                 listaArticulos = datos.Listar();
                 dgvDatos.DataSource = listaArticulos;
                 dgvDatos.Columns["UrlImagen"].Visible = false;
-               CargarImagen(listaArticulos[0].UrlImagen);
+                dgvDatos.Columns["Id"].Visible = false;
+                CargarImagen(listaArticulos[0].UrlImagen);
             }
             catch (Exception)
             {

@@ -17,11 +17,12 @@ namespace Conexion
             AccesoSQL Datos = new AccesoSQL();
             try
             {
-                Datos.Consulta("Select A.Codigo, A.Nombre, A.Descripcion, A.ImagenUrl, A.Precio , C.Descripcion Tipo, M.Descripcion Marca, M.Id, C.iD From ARTICULOS A  Inner Join MARCAS M on A.IdMarca = M.Id Inner Join CATEGORIAS C on A.IdCategoria = C.Id");
+                Datos.Consulta("Select A.Codigo, A.Nombre, A.Descripcion, A.ImagenUrl, A.Precio , C.Descripcion Tipo, M.Descripcion Marca, M.Id, C.iD, A.Id From ARTICULOS A  Inner Join MARCAS M on A.IdMarca = M.Id Inner Join CATEGORIAS C on A.IdCategoria = C.Id");
                 Datos.EjecutarLectura();
                 while (Datos.Lector.Read())
                 {
                     Artiuclo aux = new Artiuclo();
+                    aux.ID = (int)Datos.Lector["Id"];
                     aux.Codigo = (string)Datos.Lector["Codigo"];
                     aux.Nombre = (string)Datos.Lector["Nombre"];
                     aux.Descripcion = (string)Datos.Lector["Descripcion"];
@@ -30,8 +31,10 @@ namespace Conexion
                         aux.UrlImagen = (string)Datos.Lector["ImagenUrl"];
                     aux.Precio = Decimal.Round((decimal)Datos.Lector["Precio"], 2);
                     aux.Tipo = new Categorias();
+                    aux.Tipo.Id = (int)Datos.Lector["Id"];
                     aux.Tipo.Descripcion = (string)Datos.Lector["Tipo"];
                     aux.Marca = new Marca();
+                    aux.Marca.Id = (int)Datos.Lector["Id"];
                     aux.Marca.Descripcion = (string)Datos.Lector["Marca"];
 
 
@@ -78,6 +81,42 @@ namespace Conexion
             }
         }
     
+
+        public void Modificar(Artiuclo Modifico) 
+        {
+
+            AccesoSQL acceso = new AccesoSQL();
+
+
+
+            try
+            {
+
+                acceso.Consulta();
+
+
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        
+        
+        
+        
+        
+        
+        }
+
+
+
+
+
         public List<Artiuclo> Buscar(string TipoBusqueda, string Valor)
         {
             List<Artiuclo> busqueda = new List<Artiuclo>();
