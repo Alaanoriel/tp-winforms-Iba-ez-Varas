@@ -92,9 +92,16 @@ namespace Conexion
             try
             {
 
-                acceso.Consulta();
+                acceso.Consulta("update ARTICULOS set Codigo = @Codigo , Nombre = @Nombre, Descripcion = @Descripcion, ImagenUrl = @ImagenUrl, IdCategoria = @IdCategoria, IdMarca = @IdMarca , Precio = 1  Where Id = @Id ");
+                acceso.SetParametros("@Codigo", Modifico.Codigo);
+                acceso.SetParametros("@Nombre", Modifico.Nombre);
+                acceso.SetParametros("@Descripcion", Modifico.Descripcion);
+                acceso.SetParametros("@ImagenUrl", Modifico.UrlImagen);
+                acceso.SetParametros("@IdCategoria", Modifico.Tipo.Id);
+                acceso.SetParametros("@IdMarca", Modifico.Marca.Id);
+                acceso.SetParametros("@Id", Modifico.ID);
 
-
+                acceso.EjecutarAccion();
 
 
 
@@ -104,6 +111,11 @@ namespace Conexion
             {
 
                 throw;
+            }
+
+            finally
+            {
+                acceso.CerrarConexion();
             }
         
         
