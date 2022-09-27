@@ -29,11 +29,12 @@ namespace Primer_proyecto
         }
 
 
-        private void ActualizarListado()
+        private void ActualizarListado(List<Artiuclo> artiuclos)
         {
             try
-            {               
+            {
                 //Agregar columnas
+                listaArticulos = artiuclos;
                 dgvDatos.DataSource = listaArticulos;
             }
             catch (Exception ex)
@@ -75,9 +76,10 @@ namespace Primer_proyecto
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            ArticuloDatos busqueda = new ArticuloDatos();
             try
             {
-                ArticuloDatos busqueda = new ArticuloDatos();
+                
                 string valorbuscado = txtbDatosABuscar.Text;
                 string criterio = "";
                 if (cbxTipoBusqueda.SelectedIndex==0)
@@ -98,19 +100,33 @@ namespace Primer_proyecto
                     MessageBox.Show("Por favor seleccione un cirterio de busqueda");
                     return;
                 }
-                listaArticulos = busqueda.Buscar(criterio, valorbuscado);
+                ActualizarListado(busqueda.Buscar(criterio, valorbuscado));
             }
             catch (Exception ex)
             {
 
                 throw ex;
             }
-            finally
-            {
-                ActualizarListado();
-            }
         }
 
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ArticuloDatos datos = new ArticuloDatos();
+            Artiuclo seleccionado;
+            try
+            {
+                seleccionado = (Artiuclo)dgvDatos.CurrentRow.DataBoundItem;
+                datos.Eliminar(seleccionado.ID);
+            }
+            catch (Exception ex)
+            {
 
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                ActualizarListado(datos.Listar());
+            }
+        }
     }
 }

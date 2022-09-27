@@ -33,7 +33,7 @@ namespace Primer_proyecto
             this.Label_Dato = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.cbxTipoBusqueda = new System.Windows.Forms.ComboBox();
             this.pbxImagen = new System.Windows.Forms.PictureBox();
@@ -77,14 +77,15 @@ namespace Primer_proyecto
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             // 
-            // btnLimpiar
+            // btnEliminar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(392, 60);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(107, 23);
-            this.btnLimpiar.TabIndex = 6;
-            this.btnLimpiar.Text = "Limpiar texto";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(392, 60);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(107, 23);
+            this.btnEliminar.TabIndex = 6;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // dgvDatos
             // 
@@ -127,7 +128,7 @@ namespace Primer_proyecto
             this.Controls.Add(this.pbxImagen);
             this.Controls.Add(this.cbxTipoBusqueda);
             this.Controls.Add(this.dgvDatos);
-            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.Label_Dato);
@@ -148,7 +149,7 @@ namespace Primer_proyecto
         private System.Windows.Forms.Label Label_Dato;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dgvDatos;
         private System.Windows.Forms.ComboBox cbxTipoBusqueda;
         private System.Windows.Forms.PictureBox pbxImagen;

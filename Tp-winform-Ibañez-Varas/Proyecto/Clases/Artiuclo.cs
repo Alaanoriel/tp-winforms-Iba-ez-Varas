@@ -8,12 +8,18 @@ namespace Clases
 {
    public class Artiuclo
     {
+        private int id;
         private string nombre;
         private string codigo;
         private string descripcion;
         private decimal precio;
         private string urlimagen;
 
+        public int ID
+        {
+            get { return id; }
+            set { id = value; }
+        }
         public string Nombre
         {
             set

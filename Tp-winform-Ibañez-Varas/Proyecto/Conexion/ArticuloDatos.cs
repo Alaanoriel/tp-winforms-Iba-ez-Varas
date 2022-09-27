@@ -17,11 +17,12 @@ namespace Conexion
             AccesoSQL Datos = new AccesoSQL();
             try
             {
-                Datos.Consulta("Select A.Codigo, A.Nombre, A.Descripcion, A.ImagenUrl, A.Precio , C.Descripcion Tipo, M.Descripcion Marca From ARTICULOS A  Inner Join MARCAS M on A.IdMarca = M.Id Inner Join CATEGORIAS C on A.IdCategoria = C.Id");
+                Datos.Consulta("Select A.Id, A.Codigo, A.Nombre, A.Descripcion, A.ImagenUrl, A.Precio , C.Descripcion Tipo, M.Descripcion Marca From ARTICULOS A  Inner Join MARCAS M on A.IdMarca = M.Id Inner Join CATEGORIAS C on A.IdCategoria = C.Id");
                 Datos.EjecutarLectura();
                 while (Datos.Lector.Read())
                 {
                     Artiuclo aux = new Artiuclo();
+                    aux.ID = (int)Datos.Lector["Id"];
                     aux.Codigo = (string)Datos.Lector["Codigo"];
                     aux.Nombre = (string)Datos.Lector["Nombre"];
                     aux.Descripcion = (string)Datos.Lector["Descripcion"];
@@ -115,7 +116,22 @@ namespace Conexion
             
         }
     
-    
+        public void Eliminar(int id)
+        {
+            try
+            {
+                AccesoSQL datos = new AccesoSQL();
+                datos.Consulta("Delete From ARTICULOS Where ARTICULOS.Id = @Id");
+                datos.SetParametros("@Id", id);
+                datos.EjecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            
+        }
     
     }
 
