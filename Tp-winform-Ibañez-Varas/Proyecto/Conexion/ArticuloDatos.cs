@@ -118,17 +118,23 @@ namespace Conexion
     
         public void Eliminar(int id)
         {
+            AccesoSQL datos = new AccesoSQL();
             try
             {
-                AccesoSQL datos = new AccesoSQL();
+                
                 datos.Consulta("Delete From ARTICULOS Where ARTICULOS.Id = @Id");
                 datos.SetParametros("@Id", id);
                 datos.EjecutarAccion();
+
             }
             catch (Exception ex)
             {
 
                 throw ex;
+            }
+            finally
+            {
+                datos.CerrarConexion();
             }
             
         }
